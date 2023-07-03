@@ -1,1 +1,1 @@
-web: gunicorn createceramics.wsgi
+web: gunicorn bluebellceramic.wsgi
