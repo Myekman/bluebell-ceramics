@@ -37,10 +37,12 @@ GUESTS = (
 
 class Booking(models.Model):
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="user_booking")
-    email = models.EmailField()
+        User, on_delete=models.CASCADE, related_name="user_booking", blank=True, null=True)
+    name = models.CharField(max_length=70, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
     phone = models.IntegerField(blank=True, null=True)
     service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Paint")
+    guests = models.CharField(max_length=2, choices=GUESTS, default='2')
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default="12:00")
    
