@@ -2,13 +2,5 @@
 
 {% block content %}
 <h1>hello there</h1>
-<div>
-    <div>
-        {% for room in rooms %}
-            <div>
-            <h5><a href="/room/{{ room.id }}">{{ room.id }}</a> -- {{ room.name }}</h5>
-            </div>
-        {% endfor %}
-    </div>
-</div>
+
 {% endblock %}

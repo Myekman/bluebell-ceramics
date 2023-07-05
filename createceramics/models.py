@@ -9,6 +9,7 @@ SERVICE_CHOICES = (
     ("Paint", "Paint"),
     ("Turn", "Turn"),
     )
+
 TIME_CHOICES = (
     ("9:00", "9:00"),
     ("10:00", "10:00"),
@@ -22,13 +23,28 @@ TIME_CHOICES = (
     ("18:00", "18:00"),
 )
 
+GUESTS = (
+    ('1', '1'),
+    ('2', '2'),
+    ('3', '3'),
+    ('4', '4'),
+    ('5', '5'),
+    ('6', '6'),
+    ('7', '7'),
+    ('8', '8'),
+)
+
 
 class Booking(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
-    service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Doctor care")
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="user_booking")
+    email = models.EmailField()
+    phone = models.IntegerField(blank=True, null=True)
+    service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Paint")
     day = models.DateField(default=datetime.now)
-    time = models.CharField(max_length=10, choices=TIME_CHOICES, default="3 PM")
-    time_ordered = models.DateTimeField(default=datetime.now, blank=True)
+    time = models.CharField(max_length=10, choices=TIME_CHOICES, default="12:00")
+   
+    
 
     def __str__(self):
         return f"{self.user.username} | day: {self.day} | time: {self.time}"
