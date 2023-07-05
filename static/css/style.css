@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    background-color: #f7f5f5 !important;
+    color: #1F4167;
+    
+}
+
+nav {
+    height: 50px;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 100px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+#menu {
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+    
+}
+
+#menu li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}

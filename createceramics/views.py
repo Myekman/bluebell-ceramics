@@ -13,25 +13,21 @@ rooms = [
 
 
 def home(request):
-    context = {'rooms': rooms}
-    return render(request, 'createceramics/home.html', context)
+    # context = {'rooms': rooms}
+    return render(request, 'createceramics/home.html')
 
 
 def room(request, pk):
-    room = None
-    for i in rooms:
-        if i['id'] == int(pk):
-            room = i
-    context = {'room': room}
-    return render(request, 'createceramics/room.html', context)
+    # room = None
+    # for i in rooms:
+    #     if i['id'] == int(pk):
+    #         room = i
+    # context = {'room': room}
+    return render(request, 'createceramics/room.html')
 
 def services(request):
-    """
-    This view renders to the user the services page.
-    """
-    # services = Service.objects.all()
     
-    return render(request, 'createceramics/services.html', {'services': services})
+    return render(request, 'createceramics/services.html')
 
 
 def booknow(request):
