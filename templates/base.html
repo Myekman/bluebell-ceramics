@@ -8,7 +8,12 @@
 </head>
 <body>
 
-    <nav>navbar</nav>
+ <!-- Navigation -->
+
+<li class="nav-item"><a class="nav-link text-white" href="{% url 'home' %}">Home</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="{% url 'services' %}">Services</a></li>
+<li class="nav-item"><a class="nav-link text-white" href="{% url 'booknow' %}">Book now</a></li>
+
     
     {% block content %}
     <!-- Content Goes here -->
