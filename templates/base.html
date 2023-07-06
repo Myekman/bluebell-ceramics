@@ -31,17 +31,29 @@
                         <p class="nav-link prov">Book now</p>
                     </a> 
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      My Account
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#"></a>
-                      <a class="dropdown-item" href="#"></a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"></a>
-                    </div>
-                  </li>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="#">
+                        <p class="nav-link prov">My bookings</p>
+                    </a> 
+                </li>
+                <li>
+                    <a href="{% url 'account_logout' %}">
+                        <p class="nav-link prov">Logout</p>
+                    </a> 
+                </li>
+                {% else %}
+                <li>
+                    <a href="{% url 'account_signup' %}">
+                        <p class="nav-link prov">Register</p>
+                    </a> 
+                </li>
+                <li>
+                    <a href="{% url 'account_login' %}">
+                        <p class="nav-link prov">Login</p>
+                    </a> 
+                </li>
+                {% endif %}
             </ul>
             </nav>
           </div>
