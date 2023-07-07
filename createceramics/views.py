@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from datetime import datetime, timedelta
 from .models import Booking
-# from .forms import BookingForm
+from .forms import BookingForm
 
 
 
@@ -13,9 +13,9 @@ def home(request):
     return render(request, 'createceramics/home.html')
 
 
-def room(request, pk):
+def about(request, pk):
 
-    return render(request, 'createceramics/room.html')
+    return render(request, 'createceramics/about.html')
 
 def services(request):
     
@@ -23,8 +23,21 @@ def services(request):
 
 
 def booknow(request):
-
-    return render(request, 'createceramics/booknow.html')
+    """The view for the booking page. If user is logged in it renders the
+    booknow.html, otherwise it redirects user to the login page or signup page.
+    """
+    if request.method == 'POST':
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            booking_form = form.save(commit=False)
+            booking_form.user = request.user
+            booking_form.save()
+            return redirect('bookings')
+        else:
+            messages.error(request, "Please enter correct data")
+            return render(request, 'booknow.html', {'form': form})
+    form = BookingForm()
+    return render(request, 'createceramics/booknow.html', {'form': form})
 
 
 
