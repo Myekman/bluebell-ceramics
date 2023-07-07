@@ -3,20 +3,28 @@
 {% block content %}
 <h1>My bookings</h1>
 
-<div class="container">
+<div class="container mt-10">
     <div class="row">
-        <div>
-            {% for booking in bookings %}
-            <h6>{{ booking.name }}</h6>
-            <p>On: {{ booking.date }}</p>
-            <p>At: {{ booking.time }}</p>
-            <p>Service: {{ booking.service }}</p>
-            <p>Party of: {{ booking.guests }}</p>
-            <p>Email: {{ booking.email }}</p>
-            <p>Phone: {{ booking.phone }}</p>
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h5 class="card-header">Manage your booking</h5>
+            <div class="card">
+                <div class="card-body">
+                    {% for booking in bookings %}
+                    <h5 class="card-title">{{ booking.name }} have booked {{ booking.service }}</h5>
+                    <p class="card-text">On: {{ booking.day }}</p>
+                    <p class="card-text">At: {{ booking.time }}</p>
+                    <p class="card-text">Guests: {{ booking.guests }}</p>
+                    <p class="card-text">Email: {{ booking.email }}</p>
+                    <p class="card-text">Phone: {{ booking.phone }}</p>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-primary">Delete</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-            {% empty %} <p>You have no reservations currently</p>
-            {% endfor %}
-{% endblock %}
+
+  {% empty %} <p>You have no reservations currently</p>
+  {% endfor %}
+  {% endblock %}
+
