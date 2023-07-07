@@ -1,6 +1,7 @@
 from django import forms
 from .models import Booking
 from django.core.validators import MinValueValidator
+import datetime
 
 def get_min_date():
     """Returns the current date plus 2 days, so the user

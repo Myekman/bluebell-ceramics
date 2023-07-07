@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>My bookings</h1>
+
+<div class="container">
+    <div class="row">
+        <div>
+            {% for booking in bookings %}
+            <h6>{{ booking.name }}</h6>
+            <p>On: {{ booking.date }}</p>
+            <p>At: {{ booking.time }}</p>
+            <p>Service: {{ booking.service }}</p>
+            <p>Party of: {{ booking.guests }}</p>
+            <p>Email: {{ booking.email }}</p>
+            <p>Phone: {{ booking.phone }}</p>
+        </div>
+    </div>
+</div>
+            {% empty %} <p>You have no reservations currently</p>
+            {% endfor %}
+{% endblock %}
