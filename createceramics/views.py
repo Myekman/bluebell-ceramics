@@ -10,7 +10,6 @@ from django.contrib import messages
 
 
 def home(request):
-    
     return render(request, 'createceramics/home.html')
 
 
@@ -55,8 +54,26 @@ def mybookings(request):
         return render(request, 'createceramics/mybookings.html', context)
     else:
         return redirect('../accounts/signup')
+
     
 
+def edit_booking(request, booking_id):
+    """The view that renders the change_booking page where the user can
+    update a current booking.
+    """
+    record = get_object_or_404(Booking, id=booking_id)
+
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=record)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You succesfully updated your booking.')
+            return redirect('mybookings')
+        else:
+            return render(request, 'createceramics/edit_booking.html', {'form': form})
+    form = BookingForm(instance=record)
+    context = {'form': form, 'record': record}
+    return render(request, 'createceramics/edit_booking.html', context)
 
 
 

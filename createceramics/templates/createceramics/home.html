@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>hello there</h1>
+{% if user.is_authenticated %}
+<h4>Hello, {{ user.username }}!</h4>
+<p>Welcome to Studio Ceramics, please book a session and let your creativity flow</p>
+{% endif %}
+
 
 {% endblock %}
