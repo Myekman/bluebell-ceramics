@@ -11,7 +11,7 @@
                 <div class="card-body">
                     {% for booking in bookings %}
                     <h5 class="card-title">{{ booking.name }} have booked {{ booking.service }}</h5>
-                    <p class="card-text">On: {{ booking.day }}</p>
+                    <p class="card-text">On: {{ booking.date }}</p>
                     <p class="card-text">At: {{ booking.time }}</p>
                     <p class="card-text">Guests: {{ booking.guests }}</p>
                     <p class="card-text">Email: {{ booking.email }}</p>
@@ -24,7 +24,7 @@
     </div>
 </div>
 
-  {% empty %} <p>You have no reservations currently</p>
+  {% empty %} <p>You have no bookings currently</p>
   {% endfor %}
   {% endblock %}
 
