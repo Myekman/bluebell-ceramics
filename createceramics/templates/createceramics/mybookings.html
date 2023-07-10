@@ -17,7 +17,7 @@
                     <p class="card-text">Email: {{ booking.email }}</p>
                     <p class="card-text">Phone: {{ booking.phone }}</p>
                     <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary">Edit</a>
-                    <a href="#" class="btn btn-primary">Delete</a>
+                    <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary">Delete</a>
                 </div>
             </div>
         </div>

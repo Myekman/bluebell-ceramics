@@ -33,6 +33,7 @@ def booknow(request):
             booking_form = form.save(commit=False)
             booking_form.user = request.user
             booking_form.save()
+            messages.success(request, 'Booking is confirmed')
             return redirect('mybookings')
         else:
             messages.error(request, "Please enter correct data")
@@ -55,7 +56,6 @@ def mybookings(request):
     else:
         return redirect('../accounts/signup')
 
-    
 
 def edit_booking(request, booking_id):
     """The view that renders the change_booking page where the user can
@@ -74,6 +74,17 @@ def edit_booking(request, booking_id):
     form = BookingForm(instance=record)
     context = {'form': form, 'record': record}
     return render(request, 'createceramics/edit_booking.html', context)
+
+
+def delete_booking(request, booking_id):
+    """
+    Function enables user to delete a booking record
+    """
+    booking = Booking.objects.get(pk=booking_id)
+    booking.delete()
+    messages.success(request, 'Booking has been deleted')
+    return redirect('mybookings')
+
 
 
 

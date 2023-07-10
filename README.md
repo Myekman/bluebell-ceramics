@@ -108,3 +108,4 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 Happy coding!
 
 links : https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78
+https://www.google.com/search?q=booking.delete()+django&oq=booking.delete()+django&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDI3NTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:a5788408,vid:u1j-_kDc6g0
