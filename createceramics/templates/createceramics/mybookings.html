@@ -3,13 +3,13 @@
 {% block content %}
 <h1>My bookings</h1>
 
+{% for booking in bookings %}
 <div class="container mt-10">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <h5 class="card-header">Manage your booking</h5>
             <div class="card">
                 <div class="card-body">
-                    {% for booking in bookings %}
                     <h5 class="card-title">{{ booking.name }} have booked {{ booking.service }}</h5>
                     <p class="card-text">On: {{ booking.date }}</p>
                     <p class="card-text">At: {{ booking.time }}</p>
@@ -17,15 +17,16 @@
                     <p class="card-text">Email: {{ booking.email }}</p>
                     <p class="card-text">Phone: {{ booking.phone }}</p>
                     <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary">Edit</a>
-                    <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary" data-toggle="modal" data-target="#deleteModal">Delete</a>
+                    <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary" data-toggle="modal" data-target="#deleteModal-{{ booking.id }}">Delete</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
 <!-- Modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal-{{ booking.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -39,7 +40,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" id="confirm-delete">Save changes</button>
+          <a href="{% url 'delete_booking' booking.id %}" class="btn btn-warning">Delete</a>
         </div>
       </div>
     </div>
