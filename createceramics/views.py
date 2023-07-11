@@ -36,8 +36,8 @@ def booknow(request):
             messages.success(request, 'Booking is confirmed')
             return redirect('mybookings')
         else:
-            messages.error(request, 'Please enter correct data')
-            # return render(request, 'createceramics/booknow.html', {'form': form})
+            messages.error(request, 'the time is not avalible, please pick another one')
+            return render(request, 'createceramics/booknow.html', {'form': form})
     form = BookingForm()
     return render(request, 'createceramics/booknow.html', {'form': form})
 

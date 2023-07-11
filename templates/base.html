@@ -17,7 +17,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
-              <a class="navbar-brand" href="#"><h1 class="heading">Studio Ceramics</h1></a>
+              <a class="navbar-brand" href="#"><h1 class="heading">Bluebell Ceramics</h1></a>
               <div class="collapse navbar-collapse" id="navbarText">
               <ul id="menu">
                 <li>
@@ -66,18 +66,17 @@
 
     <!-- This Code get the messages from functions in views.py and displays them -->
     <br/>
-    <div class="container alert-dismissible">
-    {% if messages %}
+    {% if messages %} 
         {% for message in messages %}
-        <div class="alert alert-dark alert-dismissible" id="myAlert">
-            {{ message | safe }}
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-          </div>
-
+        <div class="container alert-dismissible">
+            <div class="alert {{ message.tags }} alert-dark alert-dismissible" id="myAlert" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+        </div>
         {% endfor %}
     {% endif %}
-    </div>
-    
+        
    
     {% block content %}
     <!-- Content Goes here -->

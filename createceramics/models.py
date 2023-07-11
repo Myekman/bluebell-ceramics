@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 
 
 # Create your models here.
@@ -62,7 +63,13 @@ class Booking(models.Model):
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default="12:00")
 
     class Meta:
-        unique_together = ('user', 'date', 'time', 'service')
+        unique_together = ['user', 'date', 'time', 'service']
+
+    def validate_unique(self, *args, **kwargs):
+        super().validate_unique(*args, **kwargs)
+
+        if Booking.objects.filter(user=self.user, date=self.date, time=self.time, service=self.service).exists():
+            raise ValidationError('please pick another time')
 
     def __str__(self):
         return self.name
