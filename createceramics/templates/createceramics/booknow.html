@@ -37,19 +37,23 @@
 <div class ="container border mt-3">
     {% if user.is_authenticated %}
     <div class = "row">
-        <div class ="col-md-6 p-5 text-center info-box">
-            <h3>Let the creativity flow!</h3>
-            <div id="form-image">image here?...</div>
+        <div class ="col-md-6 p-5 text-center form-image">
+            <div class="slideInLeft">
+                <h3>Let the creativity flow!</h3>
+                <p>Just choose your date and time</p>
+                <p>and....</p>
+                <p>come.....</p>
+            </div>
         </div>
         <div class = "col-md-6 py-3 booknow-page">
-            <h2 class="text-center mt-3 slideInLeft">Book your session</h2>
+            <h2 class="text-center mt-3">Book your session</h2>
             <div class="booknow-container">
                 <div class = "form-group mt-4">
                     <form method="POST" action="{% url 'booknow' %}" name="form">
                         {% csrf_token %}
                         {{ form|crispy }}
                                             
-                            <button class="btn btn-dark mt-3 slideInLeft" type="submit">Submit
+                            <button class="btn btn-dark mt-3 form-btn" type="submit">Submit
                                 Booking</button>
                         
                     </form>
