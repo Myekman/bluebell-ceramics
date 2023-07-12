@@ -11,61 +11,35 @@
     <title>Bluebell ceramics</title>
 </head>
 <body>
+    <!-- set the header class to fixed-top -->
     <header>
-
-         <!-- Navigation -->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-              <a class="navbar-brand" href="#"><h1 class="heading">Bluebell Ceramics</h1></a>
-              <div class="collapse navbar-collapse" id="navbarText">
-              <ul id="menu">
-                <li>
-                    <a href="{% url 'home' %}">
-                    <p class="nav-link prov">Home</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{% url 'services' %}">
-                        <p class="nav-link prov">Services</p>
-                    </a> 
-                </li>
-                <li>
-                    <a href="{% url 'booknow' %}">
-                        <p class="nav-link prov">Book now</p>
-                    </a> 
-                </li>
-                {% if user.is_authenticated %}
-                <li>
-                    <a href="{% url 'mybookings' %}">
-                        <p class="nav-link prov">My bookings</p>
-                    </a> 
-                </li>
-                <li>
-                    <a href="{% url 'account_logout' %}">
-                        <p class="nav-link prov">Logout</p>
-                    </a> 
-                </li>
-                {% else %}
-                <li>
-                    <a href="{% url 'account_signup' %}">
-                        <p class="nav-link prov">Register</p>
-                    </a> 
-                </li>
-                <li>
-                    <a href="{% url 'account_login' %}">
-                        <p class="nav-link prov">Login</p>
-                    </a> 
-                </li>
-                {% endif %}
-            </ul>
-            </nav>
-          </div>
-        </div>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="{% url 'home' %}" class="navbar-brand">Bluebell Ceramics</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
+                        <a href="{% url 'booknow' %}" class="nav-item nav-link">Book now</a>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'mybookings' %}" class="nav-item nav-link">My Bookings</a>
+                        <a href="{% url 'account_logout' %}" class="nav-item nav-link">Logout</a>
+                        {% else %}
+                        <a href="{% url 'account_signup' %}" class="nav-item nav-link">Register</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="{% url 'account_login' %}" class="nav-item nav-link">Login</a>
+                    </div>
+                        {% endif %}
+                </div>
+            </div>
+        </nav>
+      </div>
+</header>
 
     <!-- This Code get the messages from functions in views.py and displays them -->
-    <br/>
     {% if messages %} 
         {% for message in messages %}
         <div class="container alert-dismissible">
