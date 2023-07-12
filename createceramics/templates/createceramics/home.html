@@ -2,8 +2,18 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-<h4>Hello, {{ user.username }}!</h4>
-<p>Welcome to Studio Ceramics, please book a session and let your creativity flow</p>
+<div class="jumbotron jumbotron-fluid text-center">
+    <h3>Hello, {{ user.username }}!</h3>
+    <p>Welcome to Bluebell Ceramics <br> please book a session and let your creativity flow</p>
+    <a class="btn btn-dark btn-lg button-style mt-3" href="#" role="button">Book now!</a>
+</div>
+{% else %}
+<div class="jumbotron jumbotron-fluid text-center">
+    <h4>Welcome to Bluebell Ceramics</h4>
+    <p>Please register to book a session and let your creativity flow</p>
+    <a class="btn btn-dark btn-lg button-style mt-3" href="#" role="button">Book now!</a>
+</div>
+
 {% endif %}
 
 

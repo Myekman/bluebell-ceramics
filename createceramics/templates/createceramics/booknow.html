@@ -5,9 +5,7 @@
 
 {% block content %}
 
-<h1>hhey you!</h1>
-
-<div class="booknow-page d-flex justify-content-center">
+<!-- <div class="booknow-page d-flex justify-content-center">
     <div class="text-center p-5">
         <h2 class="bookings-title  mb-4">Book your appointment</h2>
         {% if user.is_authenticated %}
@@ -34,6 +32,41 @@
             {% endif %}
         </div>
     </div>
-</div>
+</div> -->
 
+<div class ="container border mt-3">
+    {% if user.is_authenticated %}
+    <div class = "row">
+        <div class = "col-md-6 py-3 booknow-page">
+            <h2 class="text-center mt-3">Book your session</h2>
+            <div class="booknow-container">
+                <div class = "form-group mt-4">
+                    <form method="POST" action="{% url 'booknow' %}" name="form">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                                            
+                            <button class="btn btn-outline-warning" type="submit">Submit
+                                Booking</button>
+                        
+                    </form>
+                </div>
+                {% else %}
+                <div class="booknow-block d-flex">
+
+                    <div class="p-3  text-left">
+                        <p >To make a booking, please <a href="/accounts/login/">login</a></p>
+                        <p>If you have not created an account yet, then please <a href="/accounts/signup/">sign up</a></p>
+                    </div>
+                </div>
+    <!-- <div class = "row">
+        <div class ="col-md-6 p-5 text-white text-center info-box">
+            <h1>Hi There</h1>
+            <p>blablabllbla...</p>
+        </div>
+    </div> -->
+    {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
