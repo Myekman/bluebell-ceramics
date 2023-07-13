@@ -24,9 +24,9 @@
 
 {% endif %}
 
-<section class="content">
-    <div class = "container px-4 how-it-works-container">
-        <h3 class="text-center">How it works:</h3>
+<section class = "content-1">
+    <div class = "container how-it-works-container">
+        <h3 class="text-center text-white">How it works:</h3>
         <div class="row gx-5">
             <div class = "col-12 col-md-3 mt-3 how-it-works-box p-5 border text-center">
                 <p>Book</p>
@@ -46,33 +46,31 @@
             </div>
         </div>
     </div>
-</section>
 
-<section>
+   
     <div class="container what-we-offer-container">
+        <h3 class="text-center text-white">What we offer:</h3>
         <div class="row">
-            <h3 class="col-12 text-center">What we offer</h3>
-            <div class="col-12 col-md-6 text-center">Paint</div>
-            <div class="col-12 col-md-6 text-center">Turn</div>
+            <div class="col-lg-9 col-md-6 services">
+                <img src="/static/img/målaceramic.jpg" class="object-fit-contain border rounded" alt="paint" height="400px">
+            </div>
+            <div class="col-lg-3 col-md-6 text-white">
+                <p>this is pamdkfekk ndkfkdkf fkdkfdkjfdf</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-white">
+                <p>this is pamdkfekk ndkfkdkf fkdkfdkjfdf</p>
+            </div>
+            <div class = "col-lg-9 col-md-6 services">
+                <img src="/static/img/dreja2.jpg" class="object-fit-contain border rounded" alt="turn" height="400px">
+            </div>
         </div>
     </div>
+
 </section>
 
-
-<!-- <script>
-    window.onscroll = function() {myFunction()};
-    
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-    </script> -->
 
 
 {% endblock %}
