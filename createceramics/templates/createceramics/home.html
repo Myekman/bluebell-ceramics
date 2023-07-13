@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<section>
+    <div class="image-container">
+        <div class="header-image" id="myHeader"></div>
+    </div>
+</section>
+
+</div>
 {% if user.is_authenticated %}
 <div class="jumbotron jumbotron-fluid text-center">
     <h3>Hello, {{ user.username }}!</h3>
@@ -15,7 +23,8 @@
 </div>
 
 {% endif %}
-<section>
+
+<section class="content">
     <div class = "container px-4 how-it-works-container">
         <h3 class="text-center">How it works:</h3>
         <div class="row gx-5">
@@ -48,6 +57,22 @@
         </div>
     </div>
 </section>
+
+
+<!-- <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script> -->
 
 
 {% endblock %}
