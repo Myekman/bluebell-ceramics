@@ -13,7 +13,7 @@
 <body>
     <!-- set the header class to fixed-top to stay in top of page -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a href="{% url 'home' %}" class="navbar-brand">Bluebell Ceramics</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -51,10 +51,34 @@
         {% endfor %}
     {% endif %}
         
-   
+<main>
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
+</main>
+
+<div class="footer">
+<footer>
+    <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
+        <div class="col-12">
+                <div class="row row-2">
+                    <div class="col-sm-3 text-md-center"><h5><span> <i class="fa fa-firefox text-light" aria-hidden="true"></i></span><b>  Stride</b></h5></div>
+                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0">Platform</li><li>Help Center</li><li>Security</li></ul></div>
+                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0">Customers</li><li>Use Cases</li><li>Customers Services</li></ul></div>
+                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0">Company</li><li>About</li><li>Careers- <span class="Careers">We're-hiring</span></li></ul></div>
+                </div>  
+        </div>
+    </div>
+    <div class="row justify-content-center mt-0 pt-0 row-1 mb-0  px-sm-3 px-2">
+            <div class="col-12">
+                <div class="row my-4 row-1 no-gutters">
+                    <div class="col-sm-3 col-auto text-center"><small>&#9400; Stride Softwere</small></div><div class="col-md-3 col-auto "></div><div class="col-md-3 col-auto"></div>
+                    <div class="col  my-auto text-md-left  text-right "> <small> hello@getstride.com <span><img src="https://i.imgur.com/TtB6MDc.png" class="img-fluid "  width="25"></span> <span><img src="https://i.imgur.com/N90KDYM.png" class="img-fluid "  width="25"></span></small>  </div> 
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 
 <script>
     setTimeout(function () {
@@ -62,7 +86,7 @@
         let alert = new bootstrap.Alert(messages);
         alert.close();
     }, 3000);
-    </script>
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

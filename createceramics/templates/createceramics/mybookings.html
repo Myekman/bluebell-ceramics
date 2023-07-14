@@ -1,31 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>My bookings</h1>
 
 {% for booking in bookings %}
+<section class="content-3">
 <div class="container mt-10">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h5 class="card-header">Manage your booking</h5>
+            <h5 class="card-header">{{ booking.name }} have booked {{ booking.service }}</h5>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ booking.name }} have booked {{ booking.service }}</h5>
+                    <h5 class="card-title">Manage your booking:</h5>
                     <p class="card-text">On: {{ booking.date }}</p>
                     <p class="card-text">At: {{ booking.time }}</p>
                     <p class="card-text">Guests: {{ booking.guests }}</p>
                     <p class="card-text">Email: {{ booking.email }}</p>
                     <p class="card-text">Phone: {{ booking.phone }}</p>
-                    <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary">Edit</a>
-                    <a href="{% url 'delete_booking' booking.id %}" class="btn btn-primary" data-toggle="modal" data-target="#deleteModal-{{ booking.id }}">Delete</a>
+                    <a href="{% url 'edit_booking' booking.id %}" class="btn btn-dark">Edit</a>
+                    <a href="{% url 'delete_booking' booking.id %}" class="btn btn-dark" data-toggle="modal" data-target="#deleteModal-{{ booking.id }}">Delete</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</section>
 
 
-<!-- Modal -->
+<!-- Modal if delete booking -->
 <div class="modal fade" id="deleteModal-{{ booking.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -46,12 +47,8 @@
     </div>
   </div>
 
-  <!-- onclick="$('#exampleModal').modal('hide');" -->
 
-
-
-
-  {% empty %} <p>You have no bookings currently</p>
+  {% empty %} <h4 class="d-flex justify-content-center align-items-center h-100">You have no bookings currently</h4>
   {% endfor %}
   {% endblock %}
 
