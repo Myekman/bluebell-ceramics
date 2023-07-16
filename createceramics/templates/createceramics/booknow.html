@@ -9,8 +9,8 @@
     <div class ="container border mt-3 d-flex justify-content-center align-items-center h-100">
         {% if user.is_authenticated %}
         <div class = "row">
-            <div class ="col-md-6 p-5 text-center form-image">
-                <div class="slideInLeft">
+            <div class ="col-md-6 p-5 text-center slidein-container">
+                <div class="slideInLeft slidein-content">
                     <h3>Let the creativity flow!</h3>
                     <p>Just choose your date and time</p>
                     <p>and....</p>
@@ -31,9 +31,10 @@
                         </form>
                     </div>
                     {% else %}
-                    <div class="booknow-block d-flex">
-
-                        <div class="p-3  text-left">
+                    <!-- <div class="booknow-block d-flex"> -->
+                    <div class = "booking_page_not_member p-5">
+                        <div>
+                        <!-- <div class="p-3 text-left"> -->
                             <p >To make a booking, please <a href="/accounts/login/">login</a></p>
                             <p>If you have not created an account yet, then please <a href="/accounts/signup/">sign up</a></p>
                         </div>
