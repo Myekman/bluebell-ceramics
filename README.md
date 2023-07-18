@@ -106,9 +106,39 @@ Bug 2 solution: Import validation error. (from django.core.exceptions import Val
 
 Bug 3: The footer was floating upp.
 <hr>
-Bug 3 solution: Add height of 100vh to every section in every page. 
+Bug 3 solution: Add height of 100vh to main section in every page. 
 
 - ### Manual Testing
+
+| Goals/actions  | As a guest | As a logged user  | Result | Comment |
+|----------------|:----------:|:-----------------:|:------:|---------|
+| I can use navbar and navigating through pages | &check; | &check; | Pass | All 
+links navigate me to the right place | &check; |&check;  |  Pass| |
+| I can see the book now button in jumbotron | &check; | &check; | Pass | when i clicked it, it navigates me to booknow page and if not logged in it asked me to Login or Register |
+| I can see the login page | &check; |&check;  |  Pass| |
+| I can see the Sign Up page | &check; |&check;  |  Pass| |
+| I can see the register page  | &check; |&check;  |  Pass| |
+| I can see the Logout page  | &cross; |&check;  |  Pass| |
+| I can see the Booknow page | &cross; | &check;  | Pass | This page and form are available only to logged in members |
+| I can fill fields in the form the Booknow page | &cross; | &check;  | Pass |As a logged in member i can fill the form and save it with the submit button |
+| I can see the my bookings page   | &cross; | &check;  | Pass | This page is available only to loged in members, as a member my bookings is saved in this page |
+| I can see the edit booking page  | &cross;  | &check;  | Pass | This page is available only to loged in members, as a logged in member i can edit my bookings and click done to save  |
+| I can see the edit booking page and go back  | &cross;  | &check;  | Pass | This page is available only to loged in members, as a logged in member i can go back from edit my booking page to keep my already booked session |
+| I can delete booking in the form on the edit booking page  | &cross;  | &check;  | Pass | This page is available only to loged in members, as a logged in member i can click delete button to delete booking |
+
+- #### Device Testing
+The website was tested using Google Chrome Developer Dashboard. The following devices have been tested:
+
+Nest HubMax (Desktop)
+iPad Pro (Tablet)
+iPad Air (Tablet)
+iPad Mini (Tablet)
+Galaxy Tab S4 (Tablet)
+Nexus 7 (Mobile)
+Nokia N9 (Mobile)
+iPhone 5/SE (Mobile)
+iPhone 4 (Mobile)
+
 
 ## Validation
 
