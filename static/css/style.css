@@ -181,6 +181,7 @@ nav {
     padding-bottom: 100px;
     color: #806653;
     background-color: #FAF4EA;
+    height: 100vh;
     
 }
 
@@ -258,6 +259,23 @@ footer {
 .signup-container {
     margin-top: 100px;
     color:#6f696d;
+}
+
+.logout-container {
+    margin-top: 200px;
+    color:#6f696d;
+}
+
+.signup-page {
+    height: 100vh;
+}
+
+.signin-page {
+    height: 100vh;
+}
+
+.logout-page {
+    height: 100vh;
 }
 
 

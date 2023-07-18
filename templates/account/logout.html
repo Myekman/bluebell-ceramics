@@ -6,22 +6,16 @@
 
 {% block content %}
 <!-- <h1>{% trans "Sign Out" %}</h1> -->
-<section>
-  <div class = "container">
-    <div class ="row">
-      <div class = "d-flex justify-content-center align-items-center"></div>
-        <p>{% trans 'Are you sure you want to sign out?' %}</p>
-    </div>
+<section class = "logout-page">
+  <div class = "container logout-container d-flex justify-content-center align-items-center">
+    <div class ="col-8 text-center p-3 border">
+        <h6>{% trans 'Are you sure you want to sign out?' %}</h6>
         <form method="post" action="{% url 'account_logout' %}">
           {% csrf_token %}
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
           {% endif %}
-          <div class ="row">
-            <div class="d-flex justify-content-center align-items-center">
-              <button type="submit">{% trans 'Sign Out' %}</button>
-            </div>
-          </div>
+              <button class="btn btn-dark" type="submit">{% trans 'Sign Out' %}</button>
         </form>
       </div>
   </div>
