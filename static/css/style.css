@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Caprasimo&family=Cormorant+Garamond:wght@300&family=Varela+Round&display=swap');
+
 html {
     height: 100%;
 }
@@ -7,7 +9,7 @@ body {
     background-color: #FAF4EA !important;
     color:#FAF4EA;
     min-height: 100vh;
-    /* position: relative; */
+    font-family: Cormorant Garamon, 'sans serif';
     display: flex;
     flex-direction: column; 
 }
@@ -16,12 +18,19 @@ body {
 nav {
     height: 50px;
     background-color: #faf4ea!important;
+    font-family: Varela Round, 'sans serif';
     
 }
 
 .image-container {
     height: 600px;
     color: #faf4ea;
+    font-size: 20px;
+   
+}
+
+h2 {
+    font-family: Angkor, 'sans serif';
 }
 
 .header-image {
@@ -39,6 +48,7 @@ nav {
     margin-bottom: 0;
     color:#6f696d;
     background-color: #faf4ea;
+  
 }
 
 
@@ -62,6 +72,7 @@ nav {
 .navbar-brand {
     font-size: 25px;
     color: #6f696d !important;
+    font-family: Angkor, 'sans serif';
 }
 
 #menu li {
@@ -77,9 +88,7 @@ nav {
 
 #menu li a {
     text-decoration: none;
-    /* color: black; */
-    /* font-size: 15px;
-    color: #faf4ea !important; */
+
 }
 
 
@@ -89,11 +98,17 @@ nav {
 .btn-dark {
     background-color: #806653;
     color: #FAF4EA;
+    font-family: Varela Round, 'sans serif';
 }
 
 .form-btn {
     margin: 0 auto;
     background-color: #806653;
+    font-family: Varela Round, 'sans serif';
+}
+
+.btn-light {
+    font-family: Varela Round, 'sans serif';
 }
 
 .btn-dark:hover {
@@ -101,13 +116,9 @@ nav {
     color: #6f696d;
 }
 
-.custom {
-    width: 70px;
-    height: 40px;
-}
-
 .btn-modal-warning {
     color: red;
+    font-family: Varela Round, 'sans serif';
 }
 
 
@@ -127,14 +138,16 @@ nav {
 
 .how-it-works-container {
     padding-top: 60px;
+    /* width: fit-content; */
+   
     
 }
 
 
 .how-it-works-box {
-    color:#FAF4EA
+    color:#FAF4EA;
     padding-top: 20px;
-    /* i want the boxes to be constant in size */
+
 }
 
 
@@ -244,6 +257,7 @@ nav {
 
 .modal-header {
     background-color: #6f696d;
+   
 }
 
 .modal-body {
@@ -262,7 +276,7 @@ footer {
     /* position: absolute; */
     /* top: 100%; */
     margin-top: auto;
-    /* padding-top: 50px; */ */
+    /* padding-top: 50px; */ 
     color: #faf4ea;
     background-color: #6f696d;
 }
