@@ -1,111 +1,151 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Bluebell Ceramics</h1>
+<div align="center"><img src=""></div>
 
-Welcome Myekman,
+## Project goal:
+This website is a fictional ceramic studio called Bluebell Ceramics. It is designed to be responsive and accessible on a variety of devices. The main purpose of the site is to attract creativ people to join as members to be able to book sessions. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[View the live project here.](https://)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+- [User Experience (UX)](#user-experience-ux)
+  - [User stories](#user-stories)
+- [Agile methodology](#agile-methodology)
+- [Design](#design)
+  - [Wireframes](#wireframes)
+- [Features](#fretures)
+- [Technologies used](#technologies-used)
+- [Programs & Tools](programs-&-tools)
+- [Testing](#testing)
+  - [Bugs](#bugs)
+  - [Manual Testing](#manual-testing)
+- [Validation](#validation)
+- [Deployment](#deployment)
+  -[Forking Repository](#forking)
+  -[Making a Clone - 2 ways](#clone)
+- [Credits](#credits)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX):
 
-`python3 -m http.server`
+### User stories
 
-A blue button should appear to click: _Make Public_,
+-   ### First Time Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+    - As a first time visitor i want to:
+    - easily understand the main purpose of the site.
+    - easily navigate between pages.
+    - be able to register to book a session of pain or turn.
+    - be able to log out after creating an account.
+      
+        
+-   ### Returning Visitor Goals
+    - As a returning visitor i want to:
+    - be able to log in with my created account.
+    - be able to make a booking.
+    - be able to se my booking in "my bookings".
+    - be able to delete or edit my booking.
+    - be able to sign out from my account. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+-   ### Frequent User Goals
+    -  As a frequent visitor I can login and find my current bookings.
+    -  As a frequent visitor I can change or cancel my bookings.
 
-Another blue button should appear to click: _Open Browser_.
+-   ### Agile methodology
+To plan this project the github agile tool has been used. By creating user stories to break down the build-up in different stages with tasks for each user story and labels for priority.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+and used the github projects page kanbanboard to keep track of what has been accrued and completed.
 
-To log into the Heroku toolbelt CLI:
+### Design
+The design I was aiming for for this site was a luxurious and clean one, but with a warmth of earthy colors.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Font  
+the fonts i..
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Images  
+The images is warm for and invited, it inspires the visitor to come and create in that cosy enviroment.  
 
-------
+- ### Wireframes  
+  add wireframes here
 
-## Release History
+## Features  
+add features here 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Technologies Used
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Languages
+- Python
+- JavaScript
+- HTML5
+- CSS3
+### Frameworks, Libraries, Programs
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Django: python framework used to create all the backend
+Database:
+PostgreSQL: the database used to store all the data.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Programs & Tools
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- [Bootstrap]([Title](https://getbootstrap.com/)), Was used to create the front-end design.
+- [Gitpod](), Gitpod was used as IDE to commit and push the project to GitHub.
+[Github](), Was used as a version control system to manage the code.
+- [Heroku](), the hosting service used to host the website.
+- [Chroome developer tools](),was used to debug the website.
+- VALIDATOR ADD HERE
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Bugs 
+Bug 1: I can change time but not date when i try to edit my bookings.
+<hr>
+Bug 1 solution: Change model field to "to date = models.datefield.
+<hr>
+Bug 2: Error message not displaying when dubblebooking.
+<hr>
+Bug 2 solution: Import validation error. (from django.core.exceptions import ValidationError) and code to model that raises the validation error. 
+<hr>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Bug 3: The footer was floating upp.
+<hr>
+Bug 3 solution: Add height of 100vh to every section in every page. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- ### Manual Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Validation
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Deployment
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The project was developed using Gitpod, the project code is stored on GitHub, and then deployed to Heroku. To deploy, follow these steps:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Log in to Heroku or create an account if you dont have one. When you are loged in you click the button labeled 'New'.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+From the drop-down menu select 'Create new app'. Enter your app name. Select your region and Click 'Create App'.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Go to 'Settings' and scroll down to the 'Config Vars' section. Click 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value. Then click 'Add'. Add CLOUDINARY_URL, DATABASE_URL and SECRET_KEY. The URL value must be copied from your CLOUDINARY account and the url for your databade_url from your ElephantSQL account. 
 
-------
+Click on the 'Deploy' tab. Next to 'Deployment method' select 'GitHub'. Connect the your GitHub repository. Under 'Manual deploy' click 'Deploy Branch'. Or you can select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub.
 
-## FAQ about the uptime script
+After successful deployment message in the page top right corner click the button labeled 'Open app' and you can access live app.
 
-**Why have you added this script?**
+#### Forking Repository
+To use this code yourself it is possible to 'fork' the code on the GitHub repository through the following steps:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Create or log into your GitHub account.
+Go to the repository you want to fork. 
+Click the 'Fork' button in the upper right-hand corner of the page. A copy of the repository will be available in your own repository.
 
-**How will this affect me?**
+#### Making a Clone - 2 ways
+1. Log in to GitHub go to the GitHub Repository you want to clone.
+Under the repository name, click button "Code", click "Clone or download".
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+2. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+Open your development editorand open a terminal window.
+Type git clone, and then paste the URL you copied in Step 3.
+like this: git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Press Enter.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Your local clone will be created.
 
-**So….?**
+## Credits
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
-
-links : https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78
-https://www.google.com/search?q=booking.delete()+django&oq=booking.delete()+django&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDI3NTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:a5788408,vid:u1j-_kDc6g0
