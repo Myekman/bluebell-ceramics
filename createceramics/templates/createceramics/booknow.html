@@ -6,8 +6,8 @@
 {% block content %}
 
 <section class ="content-2">
+    {% if user.is_authenticated %}
     <div class ="container border mt-3 d-flex justify-content-center align-items-center h-100">
-        {% if user.is_authenticated %}
         <div class = "row">
             <div class ="col-md-6 p-5 text-center slidein-container">
                 <div class="slideInLeft slidein-content">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class = "col-md-6 py-3 booknow-page">
-                <h2 class="text-center mt-3">Book your session</h2>
+                <h2 class="text-center">Book your session</h2>
                 <div class="booknow-container">
                     <div class = "form-group mt-4">
                         <form method="POST" action="{% url 'booknow' %}" name="form">
@@ -30,20 +30,19 @@
                             
                         </form>
                     </div>
-                    {% else %}
-                    <!-- <div class="booknow-block d-flex"> -->
-                    <div class = "booking_page_not_member p-5">
-                        <div>
-                        <!-- <div class="p-3 text-left"> -->
-                            <p >To make a booking, please <a href="/accounts/login/">login</a></p>
-                            <p>If you have not created an account yet, then please <a href="/accounts/signup/">sign up</a></p>
-                        </div>
-                    </div>
-        {% endif %}
                 </div>
             </div>
         </div>
     </div>
+        {% else %}
+        <!-- the page show when click on book now if not member  -->
+        <div class = "booking_page_not_member p-5">
+            <div class = "border p-5">
+                <p >To make a booking, please <a href="/accounts/login/">login</a></p>
+                <p>If you have not created an account yet, then please <a href="/accounts/signup/">sign up</a></p>
+            </div>
+        </div>
+        {% endif %}
 </section>
 
 {% endblock %}
