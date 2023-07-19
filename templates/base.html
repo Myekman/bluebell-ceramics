@@ -23,6 +23,7 @@
                     <div class="navbar-nav">
                         <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
                         <a href="{% url 'booknow' %}" class="nav-item nav-link">Book now</a>
+                        <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
                         {% if user.is_authenticated %}
                         <a href="{% url 'mybookings' %}" class="nav-item nav-link">My Bookings</a>
                         <a href="{% url 'account_logout' %}" class="nav-item nav-link">Logout</a>
@@ -74,7 +75,7 @@
         </div>
     </div>
     <hr class="bg-light">
-        <div class="container text-center mt-4 mb-4">
+        <div class="container text-center mt-4">
             <div class="copyright">
                 &copy; Copyright <strong><span>Bluebell Ceramics</span></strong>. All Rights Reserved
             </div>

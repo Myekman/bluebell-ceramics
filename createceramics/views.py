@@ -13,7 +13,7 @@ def home(request):
     return render(request, 'createceramics/home.html')
 
 
-def about(request, pk):
+def about(request):
 
     return render(request, 'createceramics/about.html')
 
