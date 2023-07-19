@@ -22,6 +22,12 @@ nav {
     
 }
 
+.navbar-collapse {
+    background-color: #FAF4EA;
+    
+}
+
+
 .image-container {
     height: 600px;
     color: #faf4ea;
@@ -109,11 +115,12 @@ h2 {
 
 .btn-light {
     font-family: Varela Round, 'sans serif';
+    background-color: #FAF4EA;
 }
 
 .btn-dark:hover {
-    background-color: #ecc0a0;
-    color: #6f696d;
+    background-color: #91a8ab;
+    color: #faf4ea;
 }
 
 .btn-modal-warning {
@@ -162,10 +169,11 @@ h2 {
 .card {
     background-color: #6f696d;
     color: #faf4ea;
+  
 }
 
 .what-we-offer-container {
-    padding-top: 60px;
+    padding-top: 50px;
     color: #faf4ea;
     padding-bottom: 50px;
     
@@ -184,12 +192,6 @@ h2 {
     
 }
 
-/* .services {
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-  } */
 
   #price_list_pottery {
     width: 100%;
@@ -216,7 +218,6 @@ h2 {
 
 .about {
     background-image: url(/static/img/ceramics10.jpg);
-    height: 100vh;
     
 }
 
@@ -226,7 +227,7 @@ h2 {
 }
 
 .img-about-container {
-    opacity: 0.8;
+    min-height: 500px;
 }
 
 
@@ -356,8 +357,9 @@ footer {
 /* -----------------------------------------------media queries for smaller devices----------------------------
 --------------------------------------------------------------------------------------------------------------- */
 /* // Small devices 
-@media screen and (max-width: 768px) {
-    .content-1 {
-        height: 900px;
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse {
+        height: 100vh;
     }
-  } */
+} */

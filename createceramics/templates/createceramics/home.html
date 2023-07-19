@@ -62,7 +62,7 @@
             <div class = "card d-none d-lg-block">
                 <div class = "row g-0">
                     <div class = "col-6 d-none d-lg-block">
-                        <img src="/static/img/målaceramic.jpg" class="card-img img-fluid" alt="paint" height="400px">
+                        <img src="/static/img/ceramics6.jpg" class="card-img img-fluid" alt="paint" height="400px">
                     </div>
                     <div class="col-6 d-flex justify-content-center align-items-center h-100">
                         <div>
@@ -73,7 +73,7 @@
                             You get guidance and help from our talented turners. A booked appointment is a maximum of 4 hours long.
                             We burn your beautiful creations, which are ready to pick up after 1 week. If you wish to paint your own pottery when it's ready, 
                             you are most welcome to book an appointment to paint it.</p>
-                            <button class="btn btn-light" onclick="showprice_Pottery()">Prices</button>
+                            <button class="btn btn-outline-light" onclick="showprice_Pottery()">Prices</button>
                             <div id="price_list_pottery">
                                 <ul class="list-group">
                                     <li class="list-group-item disabled">Prices per person:</li>
@@ -90,7 +90,7 @@
         </div>
     </div>
 
-    <!-- card visible for screen biger then lg (paint)-->
+    <!-- card visible for screen bigger then lg (paint)-->
     <div class ="row mt-4 d-flex justify-content-evenly">
         <div class="col-12">
             <div class = "card d-none d-lg-block">
@@ -102,21 +102,21 @@
                                 A session with us is 2 hours and you pay per object that you paint. You can click button below to see price example. This prices includes the use of materials such as paints, 
                                 brushes and other tools, as well as that we glaze and burn what you have painted, which is then ready to be picked up after a week.
                             </p>
-                            <button class="btn btn-light" onclick="show_pricePaint()">Prices</button>
+                            <button class="btn btn-outline-light" onclick="show_pricePaint()">Prices</button>
                             <div id="price_list_paint">
-                                    <ul class="list-group">
-                                        <li class="list-group-item disabled">Price exempel:</li>
-                                        <li class="list-group-item">coffee cup: 199;-</li>
-                                        <li class="list-group-item">Plate big: 299;-</li>
-                                        <li class="list-group-item">Plate small: 150;-</li>
-                                        <li class="list-group-item">Vase small: 199;-</li>
-                                        <li class="list-group-item">Vase big: 399;-</li>
-                                      </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item disabled">Price exempel:</li>
+                                    <li class="list-group-item">coffee cup: 199;-</li>
+                                    <li class="list-group-item">Plate big: 299;-</li>
+                                    <li class="list-group-item">Plate small: 150;-</li>
+                                    <li class="list-group-item">Vase small: 199;-</li>
+                                    <li class="list-group-item">Vase big: 399;-</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class = "col-6 d-none d-lg-block">
-                        <img src="/static/img/målaceramic.jpg" class="card-img img-fluid" alt="paint" height="400px">
+                        <img src="/static/img/ceramics4.jpg" class="card-img img-fluid" alt="paint" height="400px">
                     </div>
                 </div>
             </div>
@@ -128,15 +128,15 @@
         <div class="col-12">
 
             <div class = "card d-block d-lg-none">
-                <div class = "row">
-                    <div class="col-6 d-flex justify-content-center align-items-center h-100 p-4">
+                <div class = "row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-6">
                         <div class="text-center">
                             <h3>Pottery</h3>
                         </div>
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
                         <div class = "col-6">
-                            <img src="/static/img/målaceramic.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px">
+                            <img src="/static/img/ceramics6.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px">
                         </div>
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
@@ -167,7 +167,7 @@
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
                         <div class = "col-6">
-                            <img src="/static/img/målaceramic.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px">
+                            <img src="/static/img/ceramics4.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px">
                         </div>
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
@@ -188,6 +188,7 @@
 </section>
 
 <script>
+    // Show pricelist on click
     function showprice_Pottery() {
       var x = document.getElementById("price_list_pottery");
       if (x.style.display === "none") {
@@ -197,6 +198,7 @@
       }
     }
 
+    // Show pricelist on click
     function show_pricePaint() {
       var y = document.getElementById("price_list_paint");
       if (y.style.display === "none") {
@@ -205,7 +207,6 @@
         y.style.display = "none";
       }
     }
-
 </script>
 
 
