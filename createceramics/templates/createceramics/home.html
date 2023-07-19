@@ -65,14 +65,24 @@
                         <img src="/static/img/målaceramic.jpg" class="card-img img-fluid" alt="paint" height="400px">
                     </div>
                     <div class="col-6 d-flex justify-content-center align-items-center h-100">
-                        <div class>
+                        <div>
                             <h3 class = "text-center mt-4">Pottery</h3>
                             <p>
                             If you want to get your hands dirty and create your own shapes of ceramic. For example, 
                             statues, mugs, candlesticks, plates and bowls. Book a session of turn.
-                            You get guidance and help from our talented turners. A booked appointment is a maximum of 3 hours long.
+                            You get guidance and help from our talented turners. A booked appointment is a maximum of 4 hours long.
                             We burn your beautiful creations, which are ready to pick up after 1 week. If you wish to paint your own pottery when it's ready, 
                             you are most welcome to book an appointment to paint it.</p>
+                            <button class="btn btn-light" onclick="showprice_Pottery()">Prices</button>
+                            <div id="price_list_pottery">
+                                <ul class="list-group">
+                                    <li class="list-group-item disabled">Prices per person:</li>
+                                    <li class="list-group-item">1 hour: 299;-</li>
+                                    <li class="list-group-item">2 hours: 399;-</li>
+                                    <li class="list-group-item">3 hours: 499;-</li>
+                                    <li class="list-group-item">4 hours: 599;-</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,12 +96,23 @@
             <div class = "card d-none d-lg-block">
                 <div class = "row g-0">
                     <div class="col-6 d-flex justify-content-center align-items-center h-100 p-4">
-                        <div class>
+                        <div>
                             <h3 class = "text-center">Paint</h3>
                             <p>We have many different ceramic objects to choose from, so you will find exactly what you want to paint.
-                                A session with us is 2 hours and you pay per object that you paint. As a price example, a mug in standard 
-                                size costs SEK 299 and most items are in the price range SEK 219-379. This includes the use of materials such as paints, 
-                                brushes and other tools, as well as that we glaze and burn what you have painted, which is then ready to be picked up after a week. </p>
+                                A session with us is 2 hours and you pay per object that you paint. You can click button below to see price example. This prices includes the use of materials such as paints, 
+                                brushes and other tools, as well as that we glaze and burn what you have painted, which is then ready to be picked up after a week.
+                            </p>
+                            <button class="btn btn-light" onclick="show_pricePaint()">Prices</button>
+                            <div id="price_list_paint">
+                                    <ul class="list-group">
+                                        <li class="list-group-item disabled">Price exempel:</li>
+                                        <li class="list-group-item">coffee cup: 199;-</li>
+                                        <li class="list-group-item">Plate big: 299;-</li>
+                                        <li class="list-group-item">Plate small: 150;-</li>
+                                        <li class="list-group-item">Vase small: 199;-</li>
+                                        <li class="list-group-item">Vase big: 399;-</li>
+                                      </ul>
+                            </div>
                         </div>
                     </div>
                     <div class = "col-6 d-none d-lg-block">
@@ -154,7 +175,8 @@
                             <p>We have many different ceramic objects to choose from, so you will find exactly what you want to paint.
                                 A session with us is 2 hours and you pay per object that you paint. As a price example, a mug in standard 
                                 size costs SEK 299 and most items are in the price range SEK 219-379. This includes the use of materials such as paints, 
-                                brushes and other tools, as well as that we glaze and burn what you have painted, which is then ready to be picked up after a week. </p>
+                                brushes and other tools, as well as that we glaze and burn what you have painted, which is then ready to be picked up after a week.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +187,26 @@
 
 </section>
 
+<script>
+    function showprice_Pottery() {
+      var x = document.getElementById("price_list_pottery");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
 
+    function show_pricePaint() {
+      var y = document.getElementById("price_list_paint");
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }
+
+</script>
 
 
 {% endblock %}
