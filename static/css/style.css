@@ -40,7 +40,9 @@ h2 {
 }
 
 .header-image {
-    background-image: url(../img/ceramics5.jpg);
+    /* background-image: url(https://res.cloudinary.com/dzhnmojug/image/upload/img/ceramics5.jpg); */
+    background-image: url(https://res.cloudinary.com/dzhnmojug/image/upload/static/img/ceramics5.jpg);
+    /* background-image: url(../img/ceramics5.jpg); */
     height: 100%; 
 
     /* Create the parallax scrolling effect */
