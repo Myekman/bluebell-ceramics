@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <section>
@@ -62,7 +62,8 @@
             <div class = "card d-none d-lg-block">
                 <div class = "row g-0">
                     <div class = "col-6 d-none d-lg-block">
-                        <img src="/static/img/ceramics6.jpg" class="card-img img-fluid" alt="paint" height="400px">
+                        <!-- <img src="/static/img/ceramics6.jpg" class="card-img img-fluid" alt="paint" height="400px"> -->
+                        <img src="{% static 'img/ceramics6.jpg' %}" class="card-img img-fluid" alt="paint" height="400px">
                     </div>
                     <div class="col-6 d-flex justify-content-center align-items-center h-100">
                         <div>
@@ -116,7 +117,8 @@
                         </div>
                     </div>
                     <div class = "col-6 d-none d-lg-block">
-                        <img src="/static/img/ceramics4.jpg" class="card-img img-fluid" alt="paint" height="400px">
+                        <!-- <img src="/static/img/ceramics4.jpg" class="card-img img-fluid" alt="paint" height="400px"> -->
+                        <img src="{% static 'img/ceramics4.jpg' %}" class="card-img img-fluid" alt="paint" height="400px">
                     </div>
                 </div>
             </div>
@@ -136,7 +138,8 @@
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
                         <div class = "col-6">
-                            <img src="/static/img/ceramics6.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px">
+                            <!-- <img src="/static/img/ceramics6.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px"> -->
+                            <img src="{% static 'img/ceramics6.jpg' %}" class="card-img img-fluid" alt="paint" height="400px">
                         </div>
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
@@ -167,7 +170,8 @@
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
                         <div class = "col-6">
-                            <img src="/static/img/ceramics4.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px">
+                            <!-- <img src="/static/img/ceramics4.jpg" class="card-img img-fluid border border-light" alt="paint" height="400px"> -->
+                            <img src="{% static 'img/ceramics4.jpg' %}" class="card-img img-fluid" alt="paint" height="400px">
                         </div>
                     </div>
                     <div class = "row d-flex justify-content-center align-items-center">
