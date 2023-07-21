@@ -40,9 +40,7 @@ h2 {
 }
 
 .header-image {
-    /* background-image: url(https://res.cloudinary.com/dzhnmojug/image/upload/img/ceramics5.jpg); */
-    background-image: url(https://res.cloudinary.com/dzhnmojug/image/upload/static/img/ceramics5.jpg);
-    /* background-image: url(../img/ceramics5.jpg); */
+    background-image: url('https://res.cloudinary.com/dzhnmojug/image/upload/v1689775840/static/img/ceramics5.f4308cf1a8d7.jpg');
     height: 100%; 
 
     /* Create the parallax scrolling effect */
@@ -219,7 +217,8 @@ h2 {
 ----------------------------------------------*/
 
 .about {
-    background-image: url(/static/img/ceramics10.jpg);
+    /* background-image: url(/static/img/ceramics10.jpg); */
+    background-image: url("https://res.cloudinary.com/dzhnmojug/image/upload/v1689775844/static/img/ceramics10.5bbca23e7fec.jpg");
     
 }
 

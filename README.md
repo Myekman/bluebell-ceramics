@@ -4,7 +4,7 @@
 ## Project goal:
 This website is a fictional ceramic studio called Bluebell Ceramics. It is designed to be responsive and accessible on a variety of devices. The main purpose of the site is to attract creativ people to join as members to be able to book sessions. 
 
-[View the live project here.](https://)
+[View the live project here.](https://createceramics-1278ee3bf8cf.herokuapp.com/)
 
 - [User Experience (UX)](#user-experience-ux)
   - [User stories](#user-stories)
@@ -120,7 +120,8 @@ links navigate me to the right place | &check; |&check;  |  Pass| |
 | I can see the register page  | &check; |&check;  |  Pass| |
 | I can see the Logout page  | &cross; |&check;  |  Pass| |
 | I can see the Booknow page | &cross; | &check;  | Pass | This page and form are available only to logged in members |
-| I can fill fields in the form the Booknow page | &cross; | &check;  | Pass |As a logged in member i can fill the form and save it with the submit button |
+| In homepage i can view prices when clicking on button | &check; | &check;  | Pass |This button is viseble for new visitors and logged in members, but only viseble in lg screen and larger |
+| I can fill fields in the form the Booknow page | &cross; | &check;  | Pass | As a logged in member i can fill the form and save it with the submit button |
 | I can see the my bookings page   | &cross; | &check;  | Pass | This page is available only to loged in members, as a member my bookings is saved in this page |
 | I can see the edit booking page  | &cross;  | &check;  | Pass | This page is available only to loged in members, as a logged in member i can edit my bookings and click done to save  |
 | I can see the edit booking page and go back  | &cross;  | &check;  | Pass | This page is available only to loged in members, as a logged in member i can go back from edit my booking page to keep my already booked session |
