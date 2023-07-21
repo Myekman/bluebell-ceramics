@@ -31,7 +31,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-myekman-bluebellceramic-4uoknwf0o0g.ws-eu101.gitpod.io', '8000-myekman-bluebellceramic-4uoknwf0o0g.ws-eu102.gitpod.io', 'createceramics-1278ee3bf8cf.herokuapp.com']
 

@@ -58,17 +58,148 @@ and used the github projects page kanbanboard to keep track of what has been acc
 ### Design
 The design I was aiming for for this site was a luxurious and clean one, but with a warmth of earthy colors.
 
-- Font  
-the fonts i..
+#### Font  
+The fonts for this project: 
+ - Body: Cormorant Garamon.
+ - Logo: Varela Round.
+ - Headings: Angkor.
 
 - Images  
-The images is warm for and invited, it inspires the visitor to come and create in that cosy enviroment.  
+The pictures are warm and inviting. They must obtain a desire and curiosity to come and create at Bluebell Ceramics.
 
 - ### Wireframes  
-  add wireframes here
 
-## Features  
-add features here 
+<details>
+<summary>Home page</summary>
+
+![Home page](static/assets/wireframes/homep.b.png)
+![Home page](static/assets/wireframes/homep2.b.png)
+![Home page](static/assets/wireframes/homep.ms.png)
+
+</details>
+
+<details>
+<summary>Book now page</summary>
+
+![Book now page](static/assets/wireframes/booknow.ls.png)
+
+
+</details>
+
+<details>
+<summary>Sign up page</summary>
+
+![Sign up page](static/assets/wireframes/signup.ls.png)
+
+</details>
+
+<details>
+<summary>My bookings page</summary>
+
+![My bookings page](static/assets/wireframes/managebok.ls.png)
+
+</details>
+
+<details>
+<summary>About</summary>
+
+![My bookings page](static/assets/wireframes/about.ls.png)
+
+</details>
+
+
+<hr>
+
+
+## Features
+
+<details>
+<summary>Sign up page</summary>
+
+![Features Sign up page](static/assets/features/features.signup.png)
+
+</details>
+
+<details>
+<summary>Home page - Larger screens</summary>
+
+![Features Homepage](static/assets/features/features.home1.png)
+![Features Homepage](static/assets/features/features.home2.png)
+
+</details>
+<details>
+<summary>Home page - Smaller screens</summary>
+
+![Features Homepage](static/assets/features/navbar.mobile.png)
+![Features Homepage](static/assets/features/features.home3.png)
+![Features Homepage](static/assets/features/features.whatweoffer2.png)
+
+</details>
+
+<details>
+<summary>Book now - Larger screens</summary>
+
+![Features Booknow page](static/assets/features/features.booknow1.png)
+![Features Booknow page](static/assets/features/features.booknow2.png)
+
+</details>
+<details>
+<summary>Book now- Smaller screens</summary>
+
+![Features Booknow page](static/assets/features/features.booknow3.png)
+
+</details>
+
+
+<details>
+<summary>My Bookings page - Larger Screens</summary>
+
+![Features My Bookings page](static/assets/features/features.mybookings1.png)
+
+</details>
+
+<details>
+<summary>My Bookings page - Smaller Screens</summary>
+
+![Features My Bookings page](static/assets/features/features.mybookings2.png)
+
+</details>
+
+<details>
+<summary>Edit My Bookings page</summary>
+
+![Features Edit My Bookings page](static/assets/features/features.edit.png)
+![Features Edit My Bookings page](static/assets/features/alert.warning.png)
+The alert message is fired in edit your booking if you try to confirm same date and time again. This can be fixed in future features. If you dont want to do any changes to your booking, just press cancel and your booked session will be saved. 
+</details>
+
+<details>
+<summary>Delete My Bookings page</summary>
+
+![Features Delete My Bookings page](static/assets/features/features.delete.png)
+
+</details>
+
+<details>
+<summary>Features Footer</summary>
+
+![Features Footer](static/assets/features/features.footer.png)
+
+</details>
+
+<details>
+<summary>Success Alert messages</summary>
+
+![Success Alert Messages](static/assets/features/success.alert.png)
+
+</details>
+
+<details>
+<summary>Log out page</summary>
+
+![Features Footer](static/assets/features/features.logout.png)
+
+</details>
 
 ## Technologies Used
 

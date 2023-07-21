@@ -138,14 +138,13 @@ h2 {
 
 .content-1 {
     background-color: #6f696d;
-    /* padding-bottom: 100px; */
+   
     
 }
 
 
 .how-it-works-container {
     padding-top: 60px;
-    /* width: fit-content; */
    
     
 }
@@ -182,14 +181,14 @@ h2 {
 
 .image-container1 {
     padding-top: 20px;
-    /* height: 300px; */
+
 
 }
 
 .image-container2 {
     padding-top: 20px;
-    /* height: 300px; */
     
+
 }
 
 
@@ -201,6 +200,7 @@ h2 {
     color: #6f696d;
     margin-top: 20px;
     display: none;
+
   }
 
   #price_list_paint {
@@ -211,14 +211,15 @@ h2 {
     color: #6f696d;
     margin-top: 20px;
     display: none;
+    
   }
 
   /* ----------about section------------- 
 ----------------------------------------------*/
 
 .about {
-    /* background-image: url(/static/img/ceramics10.jpg); */
     background-image: url("https://res.cloudinary.com/dzhnmojug/image/upload/v1689775844/static/img/ceramics10.5bbca23e7fec.jpg");
+    min-height: 800px;
     
 }
 
@@ -274,6 +275,7 @@ h2 {
 .content-3 {
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 100vh;
    
 }
 
