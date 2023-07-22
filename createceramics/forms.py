@@ -1,6 +1,8 @@
 from django import forms
 from .models import Booking
 from django.core.validators import MinValueValidator
+from django.core.exceptions import ValidationError
+
 import datetime
 
 
@@ -30,3 +32,10 @@ class BookingForm(forms.ModelForm):
         model = Booking
         fields = ('name', 'phone', 'email', 'service', 'date', 'time')
         widgets = {'date': DateInput()}
+
+    def clean(self):
+        cleaned_data = self.cleaned_data
+        print(cleaned_data)
+        if Booking.objects.filter(date=cleaned_data["date"], time=cleaned_data["time"], service=cleaned_data["service"]).exists():
+            raise ValidationError('please pick another time')
+        return cleaned_data

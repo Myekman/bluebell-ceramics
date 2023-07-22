@@ -57,6 +57,12 @@ and used the github projects page kanbanboard to keep track of what has been acc
 
 ### Design
 The design I was aiming for for this site was a luxurious and clean one, but with a warmth of earthy colors.
+<details>
+<summary>Color palette for this project</summary>
+
+![Color palette](static/assets/wireframes/color.pp4.png)
+
+</details>
 
 #### Font  
 The fonts for this project: 
@@ -64,7 +70,7 @@ The fonts for this project:
  - Logo: Varela Round.
  - Headings: Angkor.
 
-- Images  
+#### Images  
 The pictures are warm and inviting. They must obtain a desire and curiosity to come and create at Bluebell Ceramics.
 
 - ### Wireframes  
@@ -140,6 +146,7 @@ The pictures are warm and inviting. They must obtain a desire and curiosity to c
 <summary>Book now - Larger screens</summary>
 
 ![Features Booknow page](static/assets/features/features.booknow1.png)
+If not logged in you are asked to register or login to view this page.
 ![Features Booknow page](static/assets/features/features.booknow2.png)
 
 </details>
@@ -217,10 +224,10 @@ PostgreSQL: the database used to store all the data.
 ### Programs & Tools
 
 - [Bootstrap]([Title](https://getbootstrap.com/)), Was used to create the front-end design.
-- [Gitpod](), Gitpod was used as IDE to commit and push the project to GitHub.
-[Github](), Was used as a version control system to manage the code.
-- [Heroku](), the hosting service used to host the website.
-- [Chroome developer tools](),was used to debug the website.
+- [Gitpod](https://www.gitpod.io/), Gitpod was used as IDE to commit and push the project to GitHub.
+- [Github](https://github.com/), Was used as a version control system to manage the code.
+- [Heroku](https://id.heroku.com/login), the hosting service used to host the website.
+- [Chroome developer tools](https://developer.chrome.com/docs/devtools/overview/),was used to debug the website.
 - VALIDATOR ADD HERE
 
 ## Testing 
@@ -310,4 +317,11 @@ Your local clone will be created.
 
 ## Credits
 
+#### Great Resorses
+[Django docs](https://docs.djangoproject.com/en/4.2/topics/forms/)
+<hr>
+[W3schools](https://www.w3schools.com/tags/tag_script.asp)
+<hr>
+[Stack overflow](https://stackoverflow.com/)
+<hr>
 

@@ -18,11 +18,6 @@ def about(request):
     return render(request, 'createceramics/about.html')
 
 
-def services(request):
-    
-    return render(request, 'createceramics/services.html')
-
-
 def booknow(request):
     """The view for the booking page. If user is logged in it renders the
     booknow.html, otherwise it redirects user to the login page or signup page.
@@ -36,7 +31,8 @@ def booknow(request):
             messages.success(request, 'Booking is confirmed')
             return redirect('mybookings')
         else:
-            messages.error(request, 'the time is not avalible, please pick another one')
+            messages.add_message(request, messages.WARNING, 'the time is not avalible, please pick another one')
+            # messages.error(request, 'the time is not avalible, please pick another one')
             return render(request, 'createceramics/booknow.html', {'form': form})
     form = BookingForm()
     return render(request, 'createceramics/booknow.html', {'form': form})

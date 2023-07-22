@@ -3,6 +3,7 @@
 {% block content %}
 
 {% for booking in bookings %}
+
 <section class="content-3">
 <div class="container mt-10">
     <div class="row">
@@ -24,7 +25,6 @@
     </div>
 </div>
 </section>
-
 
 <!-- Modal if delete booking -->
 <div class="modal fade" id="deleteModal-{{ booking.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
