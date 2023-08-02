@@ -31,9 +31,11 @@ def booknow(request):
             messages.success(request, 'Booking is confirmed')
             return redirect('mybookings')
         else:
-            messages.add_message(request, messages.WARNING, 'the time is not avalible, please pick another one')
-            # messages.error(request, 'the time is not avalible, please pick another one')
-            return render(request, 'createceramics/booknow.html', {'form': form})
+            messages.add_message(
+                request, messages.WARNING,
+                'the time is not avalible, please pick another one')
+            return render(
+                request, 'createceramics/booknow.html', {'form': form})
     form = BookingForm()
     return render(request, 'createceramics/booknow.html', {'form': form})
 
@@ -66,7 +68,8 @@ def edit_booking(request, booking_id):
             messages.success(request, 'You succesfully updated your booking.')
             return redirect('mybookings')
         else:
-            return render(request, 'createceramics/edit_booking.html', {'form': form})
+            return render(
+                request, 'createceramics/edit_booking.html', {'form': form})
     form = BookingForm(instance=record)
     context = {'form': form, 'record': record}
     return render(request, 'createceramics/edit_booking.html', context)
@@ -80,9 +83,3 @@ def delete_booking(request, booking_id):
     booking.delete()
     messages.success(request, 'Booking has been deleted')
     return redirect('mybookings')
-
-
-
-
-
-

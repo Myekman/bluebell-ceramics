@@ -1,8 +1,8 @@
 <h1 align="center">Bluebell Ceramics</h1>
-<div align="center"><img src=""></div>
 
 ## Project goal:
 This website is a fictional ceramic studio called Bluebell Ceramics. It is designed to be responsive and accessible on a variety of devices. The main purpose of the site is to attract creativ people to join as members to be able to book sessions. 
+![Img](static/assets/features/amiresponsive.4.png)
 
 [View the live project here.](https://createceramics-1278ee3bf8cf.herokuapp.com/)
 
@@ -230,7 +230,7 @@ PostgreSQL: the database used to store all the data.
 ### Programs & Tools
 - [Google Fonts](https://fonts.google.com/)Was used to to incorporate font styles.
 - [Balsamiq](https://balsamiq.com/wireframes/desktop/)Was used to create wireframes.
-- [Bootstrap]([Title](https://getbootstrap.com/)), Was used to create the front-end design.
+- [Bootstrap](https://getbootstrap.com/), Was used to create the front-end design.
 - [Gitpod](https://www.gitpod.io/), Gitpod was used as IDE to commit and push the project to GitHub.
 - [Github](https://github.com/), Was used as a version control system to manage the code.
 - [Heroku](https://id.heroku.com/login), the hosting service used to host the website.
@@ -238,6 +238,7 @@ PostgreSQL: the database used to store all the data.
 - [Font Awesome](https://fontawesome.com/)was used to create the icons used on the website.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) was used to validate CSS code for the website.
 - [W3C Validator](https://validator.w3.org/) was used to validate HTML code fot the website.
+- [pep8](https://pep8ci.herokuapp.com/) was used to validate python code.
 - VALIDATOR ADD HERE
 
 ## Testing 
@@ -302,13 +303,56 @@ Safari
 
 ## Validation
 
-- ### HTML Validation
-
-- ### CSS Validation 
+### HTML Validation
 <details>
-<summary>W3C Validator</summary>
+<summary>W3C HTML Validator</summary>
 
-![W3C Validator](static/assets/validation/validation.css.4.png)
+![W3C HTML Validator](static/assets/validation/validation.html4.png)
+
+</details>
+
+### CSS Validation 
+
+<details>
+<summary>W3C CSS Validator</summary>
+
+![W3C CSS Validator](static/assets/validation/validation.css.4.png)
+
+</details>
+
+### Python Validation
+<details>
+<summary>urls.py</summary>
+
+![Urls.py](static/assets/validation/url.validation.png)
+
+</details>
+
+<details>
+<summary>views.py</summary>
+
+![Urls.py](static/assets/validation/views.validation.png)
+
+</details>
+
+<details>
+<summary>urls.py</summary>
+
+![Urls.py](static/assets/validation/validation.urls.png)
+
+</details>
+
+<details>
+<summary>models.py</summary>
+
+![Urls.py](static/assets/validation/validation.models.png)
+
+</details>
+
+<details>
+<summary>forms.py</summary>
+
+![Urls.py](static/assets/validation/validation.forms.png)
 
 </details>
 
