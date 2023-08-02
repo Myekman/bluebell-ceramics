@@ -239,7 +239,7 @@ PostgreSQL: the database used to store all the data.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) was used to validate CSS code for the website.
 - [W3C Validator](https://validator.w3.org/) was used to validate HTML code fot the website.
 - [pep8](https://pep8ci.herokuapp.com/) was used to validate python code.
-- VALIDATOR ADD HERE
+- [Aos animation](https://michalsnik.github.io/aos/) was used to create animation with HTML.
 
 ## Testing 
 
@@ -403,9 +403,9 @@ Media
 The images in this project is taken from [pexles.com](https://www.pexels.com/)
 
 #### Great Resorses
-[Django docs](https://docs.djangoproject.com/en/4.2/topics/forms/)
 [W3schools](https://www.w3schools.com/tags/tag_script.asp)
 [Stack overflow](https://stackoverflow.com/)
+[Aos animation repository](https://github.com/michalsnik/aos)
 
 Thanks to The tutor support team at Code Institute for their support.
 My Code Institute Mentor and the Code Institute Slack community.

@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 
+<div class = "overflow.hidden">
 <section>
     <div class="image-container d-none d-lg-block">
         <div class="header-image d-flex justify-content-center align-items-center h-100" id="myHeader">
@@ -17,19 +18,20 @@
 <div class="jumbotron jumbotron-fluid text-center">
     <h3>Hello, {{ user.username }}!</h3>
     <p>Welcome to Bluebell Ceramics <br> please book a session and let your creativity flow</p>
-    <a class="btn btn-dark btn-lg button-style mt-3" href="{% url 'booknow' %}" role="button">Book now!</a>
+    <a class="btn btn-dark btn-lg button-style mt-3"  data-aos="zoom-in" data-aos-duration="2000" href="{% url 'booknow' %}" role="button">Book now!</a>
 </div>
 {% else %}
 <div class="jumbotron jumbotron-fluid text-center">
     <h4>Welcome to Bluebell Ceramics</h4>
     <p>Please register to book a session and let your creativity flow</p>
-    <a class="btn btn-dark btn-lg button-style mt-3" href="{% url 'booknow' %}" role="button">Book now!</a>
+    <a class="btn btn-dark btn-lg button-style mt-3"  data-aos="zoom-in" data-aos-duration="2000" href="{% url 'booknow' %}" role="button">Book now!</a>
 </div>
 
 {% endif %}
 
 <section class = "content-1">
-    <div class = "container how-it-works-container">
+    <div class = "container how-it-works-container" data-aos="fade-up"
+    data-aos-duration="2000">
         <h3 class="text-center text-white">How it works:</h3>
         <div class="row gx-5">
             <div class = "col-12 col-md-3 mt-3 how-it-works-box p-5 border text-center">
@@ -58,7 +60,7 @@
     <!-- card visible for screen bigger then lg (turn)-->
     <div class ="row mt-4 d-flex justify-content-evenly">
         <div class="col-12">
-            <div class = "card d-none d-lg-block">
+            <div class = "card d-none d-lg-block" data-aos="fade-up" data-aos-duration="2000">
                 <div class = "row g-0">
                     <div class = "col-6 d-none d-lg-block">
                         <img src="{% static 'img/ceramics6.jpg' %}" class="card-img img-fluid" alt="paint">
@@ -92,7 +94,7 @@
     <!-- card visible for screen bigger then lg (paint)-->
     <div class ="row mt-4 d-flex justify-content-evenly">
         <div class="col-12">
-            <div class = "card d-none d-lg-block">
+            <div class = "card d-none d-lg-block" data-aos="fade-up" data-aos-duration="2000">
                 <div class = "row g-0">
                     <div class="col-6 d-flex justify-content-center align-items-center h-100 p-4">
                         <div>
@@ -126,7 +128,7 @@
     <div class ="row mt-4">
         <div class="col-12">
 
-            <div class = "card d-block d-lg-none">
+            <div class = "card d-block d-lg-none" data-aos="fade-up" data-aos-duration="2000">
                 <div class = "row d-flex justify-content-center align-items-center h-100">
                     <div class="col-6">
                         <div class="text-center">
@@ -157,7 +159,7 @@
     <div class ="row mt-4">
         <div class="col-12">
 
-            <div class = "card d-block d-lg-none">
+            <div class = "card d-block d-lg-none" data-aos="fade-up" data-aos-duration="2000">
                 <div class = "row d-flex justify-content-center align-items-center">
                     <div class="col-6">
                         <div class="text-center">
@@ -185,6 +187,7 @@
 </div>
 
 </section>
+</div>
 
 <script>
     // Show pricelist on click

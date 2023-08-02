@@ -10,12 +10,13 @@ body {
     min-height: 100vh;
     font-family: Cormorant Garamon, 'sans serif';
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+   
 }
 
-/* main {
-    min-height: 100vh;
-} */
+.overflow.hidden {
+    overflow-x: hidden;
+}
 
 
 nav {
@@ -225,16 +226,13 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 2;
 }
 
 .about-container {
     opacity: 0.8;
     min-height: 500px;
 }
-
-/* .img-about-container {
-    min-height: 500px;
-} */
 
 
 /* -------------------------------------------------book now page----------------------------------------------- 
