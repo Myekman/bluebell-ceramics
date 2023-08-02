@@ -38,14 +38,17 @@ GUESTS = (
 
 class Booking(models.Model):
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="user_booking", blank=True, null=True)
+        User, on_delete=models.CASCADE, related_name="user_booking",
+        blank=True, null=True)
     name = models.CharField(max_length=70, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     phone = models.IntegerField(blank=True, null=True)
-    service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Paint")
+    service = models.CharField(
+        max_length=50, choices=SERVICE_CHOICES, default="Paint")
     guests = models.CharField(max_length=2, choices=GUESTS, default='2')
     date = models.DateField(default=datetime.now, blank=True)
-    time = models.CharField(max_length=10, choices=TIME_CHOICES, default="12:00")
+    time = models.CharField(
+        max_length=10, choices=TIME_CHOICES, default="12:00")
 
     class Meta:
         unique_together = ['user', 'date', 'time', 'service']
@@ -53,7 +56,9 @@ class Booking(models.Model):
     def validate_unique(self, *args, **kwargs):
         super().validate_unique(*args, **kwargs)
 
-        if Booking.objects.filter(user=self.user, date=self.date, time=self.time, service=self.service).exists():
+        if Booking.objects.filter(
+                user=self.user, 
+                date=self.date, time=self.time, service=self.service).exists():
             raise ValidationError('please pick another time')
 
     def __str__(self):

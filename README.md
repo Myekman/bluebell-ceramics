@@ -215,6 +215,7 @@ The alert message is fired in edit your booking if you try to confirm same date 
 - JavaScript
 - HTML5
 - CSS3
+
 ### Frameworks, Libraries, Programs
 
 Django: python framework used to create all the backend
@@ -222,7 +223,8 @@ Database:
 PostgreSQL: the database used to store all the data.
 
 ### Programs & Tools
-
+- [Google Fonts](https://fonts.google.com/)Was used to to incorporate font styles.
+- [Balsamiq](https://balsamiq.com/wireframes/desktop/)Was used to create wireframes.
 - [Bootstrap]([Title](https://getbootstrap.com/)), Was used to create the front-end design.
 - [Gitpod](https://www.gitpod.io/), Gitpod was used as IDE to commit and push the project to GitHub.
 - [Github](https://github.com/), Was used as a version control system to manage the code.
@@ -241,10 +243,14 @@ Bug 2: Error message not displaying when dubblebooking.
 <hr>
 Bug 2 solution: Import validation error. (from django.core.exceptions import ValidationError) and code to model that raises the validation error. 
 <hr>
-
 Bug 3: The footer was floating upp.
 <hr>
-Bug 3 solution: Add height of 100vh to main section in every page. 
+Bug 3 solution: Add height of 100vh to main section in every page.
+<hr>
+Bug 4: CSS background img not showing on Heroku.
+<hr>
+Bug 4 solution: Update the url to the absolute link in cloudinary.
+<hr>
 
 - ### Manual Testing
 
@@ -317,11 +323,21 @@ Your local clone will be created.
 
 ## Credits
 
+Code
+Bootstrap Documenation was used was used to achieve css styling.
+Code Institute walkthroughs "Hello Django" and "I Think Therefore I Blog" was used as inspiration.
+
+Content
+All content is written by the author.
+
+Media
+The images in this project is taken from [pexles.com](https://www.pexels.com/)
+
 #### Great Resorses
 [Django docs](https://docs.djangoproject.com/en/4.2/topics/forms/)
-<hr>
 [W3schools](https://www.w3schools.com/tags/tag_script.asp)
-<hr>
 [Stack overflow](https://stackoverflow.com/)
-<hr>
+
+Thanks to The tutor support team at Code Institute for their support.
+My Code Institute Mentor and the Code Institute Slack community.
 

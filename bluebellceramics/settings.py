@@ -26,14 +26,17 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-r6z(_osu@phe1a@q8ewkvei8vc-%m-5mb$7)z@t(x4qi1==q^='
+# SECRET_KEY = 'django-insecure-r6z
+# (_osu@phe1a@q8ewkvei8vc-%m-5mb$7)z@t(x4qi1==q^='
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-myekman-bluebellceramic-4uoknwf0o0g.ws-eu101.gitpod.io', '8000-myekman-bluebellceramic-4uoknwf0o0g.ws-eu102.gitpod.io', 'createceramics-1278ee3bf8cf.herokuapp.com']
+ALLOWED_HOSTS = ['8000-myekman-bluebellceramic-4uoknwf0o0g.ws-eu101.gitpod.io',
+                 '8000-myekman-bluebellceramic-4uoknwf0o0g.ws-eu102.gitpod.io',
+                 'createceramics-1278ee3bf8cf.herokuapp.com']
 
 
 # Application definition
@@ -122,16 +125,21 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.\
+            UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
@@ -154,7 +162,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = \
+    'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
