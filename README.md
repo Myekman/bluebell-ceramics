@@ -50,7 +50,7 @@ This website is a fictional ceramic studio called Bluebell Ceramics. It is desig
     -  As a frequent visitor I can login and find my current bookings.
     -  As a frequent visitor I can change or cancel my bookings.
 
--   ### Agile methodology
+### Agile methodology
 To plan this project the github agile tool has been used. By creating user stories to break down the build-up in different stages with tasks for each user story and labels for priority.
 
 and used the github projects page kanbanboard to keep track of what has been accrued and completed.
@@ -73,7 +73,7 @@ The fonts for this project:
 #### Images  
 The pictures are warm and inviting. They must obtain a desire and curiosity to come and create at Bluebell Ceramics.
 
-- ### Wireframes  
+### Wireframes  
 
 <details>
 <summary>Home page</summary>
@@ -208,6 +208,11 @@ The alert message is fired in edit your booking if you try to confirm same date 
 
 </details>
 
+### Future features
+- Booking confirmation by email.
+- Contact form.
+- Make a model that makes it possible to leave a recent review.
+
 ## Technologies Used
 
 ### Languages
@@ -230,6 +235,9 @@ PostgreSQL: the database used to store all the data.
 - [Github](https://github.com/), Was used as a version control system to manage the code.
 - [Heroku](https://id.heroku.com/login), the hosting service used to host the website.
 - [Chroome developer tools](https://developer.chrome.com/docs/devtools/overview/),was used to debug the website.
+- [Font Awesome](https://fontawesome.com/)was used to create the icons used on the website.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) was used to validate CSS code for the website.
+- [W3C Validator](https://validator.w3.org/) was used to validate HTML code fot the website.
 - VALIDATOR ADD HERE
 
 ## Testing 
@@ -284,8 +292,25 @@ Nokia N9 (Mobile)
 iPhone 5/SE (Mobile)
 iPhone 4 (Mobile)
 
+- #### Browsers Tested
+Testing has been carried out on the following browsers:
+
+Google Chrome
+Firefox
+Microsoft Edge
+Safari
 
 ## Validation
+
+- ### HTML Validation
+
+- ### CSS Validation 
+<details>
+<summary>W3C Validator</summary>
+
+![W3C Validator](static/assets/validation/validation.css.4.png)
+
+</details>
 
 ## Deployment
 

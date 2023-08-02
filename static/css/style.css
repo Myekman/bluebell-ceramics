@@ -7,16 +7,15 @@ html {
 body {
     margin-top: 50px;
     background-color: #FAF4EA !important;
-    color:#FAF4EA;
     min-height: 100vh;
     font-family: Cormorant Garamon, 'sans serif';
     display: flex;
     flex-direction: column; 
 }
 
-main {
+/* main {
     min-height: 100vh;
-}
+} */
 
 
 nav {
@@ -64,7 +63,7 @@ h2 {
 
 .heading {
     font-size: 30px;
-    font-weight: 100px;
+    font-weight: 100;
     margin-top: 10px;
     letter-spacing: 3px;
 }
@@ -177,7 +176,6 @@ h2 {
 
 .what-we-offer-container {
     padding-top: 50px;
-    color: #faf4ea;
     padding-bottom: 50px;
     
 }
@@ -223,8 +221,10 @@ h2 {
 
 .about {
     background-image: url("https://res.cloudinary.com/dzhnmojug/image/upload/v1689775844/static/img/ceramics10.5bbca23e7fec.jpg");
-    min-height: 800px;
-    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-container {
@@ -232,9 +232,9 @@ h2 {
     min-height: 500px;
 }
 
-.img-about-container {
+/* .img-about-container {
     min-height: 500px;
-}
+} */
 
 
 /* -------------------------------------------------book now page----------------------------------------------- 

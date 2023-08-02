@@ -57,7 +57,7 @@ class Booking(models.Model):
         super().validate_unique(*args, **kwargs)
 
         if Booking.objects.filter(
-                user=self.user, 
+                user=self.user,
                 date=self.date, time=self.time, service=self.service).exists():
             raise ValidationError('please pick another time')
 
