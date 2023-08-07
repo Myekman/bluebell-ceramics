@@ -225,6 +225,7 @@ The alert message is fired in edit your booking if you try to confirm same date 
 
 Django: python framework used to create all the backend
 Database:
+<hr>
 PostgreSQL: the database used to store all the data.
 
 ### Programs & Tools
@@ -281,7 +282,8 @@ links navigate me to the right place | &check; |&check;  |  Pass| |
 | I can delete booking in the form on the edit booking page  | &cross;  | &check;  | Pass | This page is available only to loged in members, as a logged in member i can click delete button to delete booking |
 
 - #### Device Testing
-The website was tested using Google Chrome Developer Dashboard. The following devices have been tested:
+The website was tested using Google Chrome Developer Dashboard. 
+The following devices have been tested:
 
 Nest HubMax (Desktop)
 iPad Pro (Tablet)
@@ -304,9 +306,9 @@ Safari
 ## Validation
 
 ### HTML Validation
+The HTML Code for this project was tested via the url link to the project.
 <details>
 <summary>W3C HTML Validator</summary>
-
 ![W3C HTML Validator](static/assets/validation/validation.html4.png)
 
 </details>

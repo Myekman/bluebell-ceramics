@@ -222,16 +222,16 @@ h2 {
 
 .about {
     background-image: url("https://res.cloudinary.com/dzhnmojug/image/upload/v1689775844/static/img/ceramics10.5bbca23e7fec.jpg");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 2;
+    min-height: 100vh;
 }
 
 .about-container {
     opacity: 0.8;
-    min-height: 500px;
+    min-height: 800px;
 }
 
 
@@ -323,6 +323,7 @@ footer {
     margin-top: auto;
     color: #faf4ea;
     background-color: #6f696d;
+   
 }
 
 
@@ -356,14 +357,3 @@ footer {
 .logout-page {
     height: 100vh;
 }
-
-
-/* -----------------------------------------------media queries for smaller devices----------------------------
---------------------------------------------------------------------------------------------------------------- */
-/* // Small devices 
-
-@media screen and (max-width: 992px) {
-    .navbar-collapse {
-        height: 100vh;
-    }
-} */
